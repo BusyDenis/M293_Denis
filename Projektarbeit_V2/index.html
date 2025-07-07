@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis S. - Portfolio</title>
+    <meta name="description" content="Portfolio erstellt und für Denis Suciu - 1. Lehrjahr bei Nine Internet Solutions AG">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>Denis Suciu</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projekte</a></li>
+                <li><a href="about.html" class="nav-link">Über mich</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Willkommen zu mein Porfolio, ich bin <span class="highlight">Denis Suciu</span></h1>
+                    <p class="hero-subtitle">1. Lehrjahr bei Nine Internet Solutions AG</p>
+                    <p class="hero-description">
+                        Geboren am 09.10.2006, aktuell im Basislehrjahr bei Noser Young für Nine. 
+                        <br>
+                        Meine Begeisterung gilt besonders dem Programmieren und Gaming
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">Projekte ansehen</a>
+                        <a href="contact.html" class="btn btn-secondary">Kontakt</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop&crop=face" alt="Denis Suciu" class="profile-img">
+                        <div class="profile-overlay">
+                            <span class="status-indicator"></span>
+                            <p>Verfügbar für Projekte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (SecureAI-Style Feature Cards) -->
+        <section class="features" id="portfolio-features">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">Was mich ausmacht</h2>
+                    <p class="section-subtitle">Meine wichtigsten Stärken und Interessen auf einen Blick</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white;">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="feature-title">Coding</h3>
+                        <p class="feature-text">HTML, CSS, Java, C#, SQL, JavaScript und vieles mehr – ich liebe es, neue Technologien zu entdecken und kreative Lösungen zu entwickeln.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background: linear-gradient(135deg, #8b5cf6, #3b82f6); color: white;">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 class="feature-title">Gaming</h3>
+                        <p class="feature-text">Ich spiele gerne AutoSim Spiele, wie F1, Assetto Corsa, Forza Horizon und vieles mehr. Auch Shooter Spiele wie Call of Duty, Valorant und vieles mehr.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white;">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3 class="feature-title">Musik</h3>
+                        <p class="feature-text">Lieblingsartists: The Weekekend, Playboi Carti, Yeat und vieles mehr.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Ausgewählte Projekte</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="SecureAI.png">
+                        <div class="project-content" style="position: relative;">
+                            <span class="project-category">Eigenes Projekt</span>
+                            <span class="project-badge-inactive">Inaktiv</span>
+                            <h3>SecureTrade Ai</h3>
+                            <p>Gescheitertes Projekt zusammen mit einem Freund</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="PortfolioPic.png" >
+                        <div class="project-content" style="position: relative;">
+                            <span class="project-category">Coding</span>
+                            <span class="project-badge-aktiv">Aktiv</span>
+                            <h3>Personal Portfolio</h3>
+                            <p>Responsive Website mit HTML, für das Modul 293</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="SushiFullstack.png" >
+                        <div class="project-content" style="position: relative;">
+                            <span class="project-category">Noser Young</span>
+                            <span class="project-badge-aktiv">Aktiv</span>
+                            <h3>Fullstack Projekt, für ein Restaurant</h3>
+                            <p>Ein Projekt, dass wir für ein Restaurant erstellt haben. Durch Aufgabe von der Noser Young</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="projects.html" class="btn btn-outline">Alle Projekte ansehen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspirations-/Motivations-Quote Section -->
+        <section class="inspiration-section">
+            <div class="container">
+                <div class="inspiration-quote-card">
+                    <div class="inspiration-quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <blockquote class="inspiration-quote">
+                        "Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen."
+                    </blockquote>
+                    <div class="inspiration-quote-author">
+                        – Alan Kay
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Section (replaces Kontakt) -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2 class="newsletter-title">
+                    Bleib auf dem Laufenden <span class="newsletter-title-accent">– Newsletter abonnieren</span>
+                </h2>
+                <p class="newsletter-desc">
+                    Trage deine E-Mail ein und erhalte Updates zu neuen Projekten, Tech-Trends und mehr direkt in dein Postfach.
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Deine E-Mail-Adresse" required>
+                    <button type="submit" class="btn btn-primary newsletter-btn">Jetzt abonnieren</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Denis Suciu</h3>
+                    <p>1. Lehrjahr bei Nine Internet Solutions AG<br>Basislehrjahr bei Noser Young</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>E-Mail: denissuc.den@gmail.com<br>Telefon: +41766979750</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Projekte</h3>
+                    <p>GitHub: github.com/BusyDenis</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Denis Suciu. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

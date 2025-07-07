@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis S. - Portfolio</title>
+    <meta name="description" content="Portfolio erstellt und für Denis Suciu - 1. Lehrjahr bei Nine Internet Solutions AG">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>Denis Suciu</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projekte</a></li>
+                <li><a href="about.html" class="nav-link">Über mich</a></li>
+                <li><a href="contact.html" class="nav-link active">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Lass uns über dein Projekt sprechen oder einfach Hallo sagen!</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2 class="contact-title-gradient">Nachricht senden</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Betreff *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="projekt">Frage zum Projekt</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="zusammenarbeit">Zusammenarbeit</option>
+                                    <option value="sonstiges">Sonstiges</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Nachricht *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    Ich stimme der Verarbeitung meiner Daten zu
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info glass-card">
+                        <h2 class="contact-title-gradient">Kontaktinformationen</h2>
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                                <div>
+                                    <h3>E-Mail</h3>
+                                    <p>denissuc.den@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                                <div>
+                                    <h3>Telefon</h3>
+                                    <p>+41 76 697 97 50</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fab fa-github"></i></span>
+                                <div>
+                                    <h3>GitHub</h3>
+                                    <p>github.com/BusyDenis</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fas fa-building"></i></span>
+                                <div>
+                                    <h3>Ausbildung</h3>
+                                    <p>1. Lehrjahr bei Nine Internet Solutions AG<br>Basislehrjahr bei Noser Young</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="availability">
+                            <h3>Verfügbarkeit</h3>
+                            <div class="status">
+                                <span class="status-dot available"></span>
+                                <span>Verfügbar für neue Projekte</span>
+                            </div>
+                            <p>Beste Antwortzeit: 24-48 Stunden</p>
+                        </div>
+                        <div class="social-links">
+                            <h3>Social Media</h3>
+                            <div class="social-buttons">
+                                <a href="https://github.com/BusyDenis" class="social-btn"><i class="fab fa-github"></i> Github</a>
+                                <a href="https://www.linkedin.com/in/denis-s-642021282/" class="social-btn"><i class="fab fa-linkedn"></i>LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Denis Suciu</h3>
+                    <p>1. Lehrjahr bei Nine Internet Solutions AG<br>Basislehrjahr bei Noser Young</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>E-Mail: denissuc.den@gmail.com<br>Telefon: +41766979750</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Projekte</h3>
+                    <p>GitHub: github.com/BusyDenis</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Denis Suciu. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
