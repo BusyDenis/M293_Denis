@@ -3,7 +3,7 @@
 ## Projektbeschreibung
 Dieses Projekt ist ein digitales Portfolio, das mithilfe KI-gestützter Entwicklungsumgebungen (z. B. Cursor) erstellt wurde. Ziel ist es, die effiziente Nutzung von KI für Layout, Codegenerierung, UI-Optimierung und Problemlösung zu dokumentieren und zu präsentieren.
 
-**Hinweis:** Diese Website wird durch [GitHub Pages](https://pages.github.com/) gehostet.
+**Hinweis:** Diese Website wird durch [GitHub Pages](https://pages.github.com/) gehostet. unter: https://busydenis.github.io/M293_Denis/
 
 ## Features
 - **Startseite** mit neuesten Projekten, Kategorien und Newsletter-Anmeldung
