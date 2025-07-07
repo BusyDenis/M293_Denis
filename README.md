@@ -42,8 +42,8 @@ Dieses Projekt ist ein digitales Portfolio, das mithilfe KI-gestützter Entwickl
 
 ## Veröffentlichung
 - Deployment auf **GitHub Pages** (diese Website wird durch GitHub Pages gehostet) oder anderem Webserver
-- Link zum Repository: *[hier einfügen]*
-- Link zur Live-Seite: *[hier einfügen]*
+- Link zum Repository: https://github.com/BusyDenis/M293_Denis
+- Link zur Live-Seite: https://busydenis.github.io/M293_Denis/
 
 ---
 
