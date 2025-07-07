@@ -660,37 +660,44 @@ th
 }
 
 @media (max-width: 576px) {
-    html, body {
-        width: 100vw;
-        min-height: 100vh;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    html, body, body.index-home, html.index-home {
+        background: #fff !important;
     }
-    body.index-home, html.index-home {
-        background: linear-gradient(180deg, #fff 0%, #eaf2fb 40%, #0a1536 80%, #0a1536 100%) !important;
-    }
-    .header, .home {
+    .header {
         width: 100vw;
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 0;
         box-sizing: border-box;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        height: 56px;
+        border-bottom: 1px solid #eaeaea;
     }
     .logo {
         font-size: 20px;
         color: #0a1536;
-        margin-bottom: 4px;
         font-weight: 700;
-        text-align: center;
+        margin-left: 16px;
+        margin-bottom: 0;
+        text-align: left;
+        flex: 0 0 auto;
     }
     .navbar {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        width: 100vw;
-        margin: 0;
-        gap: 16px;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin: 0 16px 0 0;
+        gap: 12px;
+        background: none;
     }
     .navbar a {
         font-size: 15px;
@@ -716,31 +723,35 @@ th
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 4vw;
+        padding: 72px 4vw 0 4vw;
         min-height: 100vh;
         background: transparent;
         width: 100vw;
         box-sizing: border-box;
     }
     .home-image {
-        width: 90px;
-        height: 90px;
-        border: 3px solid #fff;
-        outline: 2px solid #00abf0;
+        width: 180px;
+        height: 180px;
+        border: 10px solid #fff;
+        outline: 10px solid #031540;
+        background: #031540;
         margin: 24px auto 8px auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #fff;
         border-radius: 50%;
         box-shadow: 0 2px 8px #0a153622;
+        overflow: hidden;
     }
     .home-image img {
-        width: 80px;
-        height: 80px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        border-radius: 50%;
+        object-position: 50% 50%;
+        display: block;
         border: none;
+        box-sizing: border-box;
+        margin-top: -2px;
     }
     .home-content {
         max-width: 100%;
@@ -750,7 +761,7 @@ th
         padding: 0;
     }
     .home-content h1 {
-        font-size: 20px;
+        font-size: 22px;
         margin: 10px 0 4px 0;
         font-weight: 800;
         color: #0a1536;
@@ -761,6 +772,9 @@ th
         color: #00abf0;
         font-weight: 600;
         letter-spacing: 1px;
+        background: none;
+        -webkit-text-stroke: 0;
+        text-shadow: none;
     }
     .home-content p {
         font-size: 13px;
@@ -790,7 +804,7 @@ th
         align-items: center;
         justify-content: center;
         box-shadow: 0 2px 8px #00abf022;
-        border: none;
+        border: 1px solid #eaf2fb;
         transition: background 0.2s, color 0.2s;
     }
     .home-sci a:hover {
@@ -834,5 +848,51 @@ th
         color: #fff;
         background: #11204d;
         border-radius: 6px;
+    }
+    .album-page,
+    .album-page .home-3,
+    .album-page .home-content-3 {
+        color: #222 !important;
+    }
+    .album-page .home-content-3 h1,
+    .album-page .home-content-3 h3,
+    .album-page .home-content-3 p {
+        color: #222 !important;
+    }
+    .album-page .home-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        justify-items: center;
+        align-items: start;
+        padding: 72px 8px 0 8px;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .album-page .home-image-3 {
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .album-page .home-image-3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+        position: static;
+    }
+    .album-page .home-content-3 {
+        grid-column: 1 / -1;
+        margin-top: 24px;
+        text-align: center;
     }
 }
